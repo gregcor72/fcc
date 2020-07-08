@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, html {
+	margin:0;
+	padding:0;
+	font-family:Poppins,sans-serif;
+	height:100%;
+}
+
+h1 {
+	margin:0px;
+}
+
+p {margin-top:0px;}
+
+#main {
+	display:flex;
+	align-items:flex-start;
+	justify-content:center;
+	background:#112e51;
+	height:100%;
+}
+
+#grid-wrapper {
+	background:rgba(255,255,255,.6);
+	width:800px;
+	margin:20px 0px;
+	border-radius:5px;
+	padding:10px;
+
+}
+
+input[type="text"], input[type="email"],input[type="number"],select,textarea {
+	display:block;
+	width:100%;
+	padding:10px;
+	border:0px;
+	border-radius:.5em;
+	font-size:1.1em;
+}
+
+input[type="checkbox"] {
+	padding:3px;
+	background-color:green;
+}
+
+form > div {
+	margin-bottom:10px;
+}
+
+.input-group > label {
+	display:inline-block !important;
+}
+
+.input-group > input {
+	display:inline-block;
+}
+
+button {
+	padding:5px;
+	font-size:1.1em;
+	border-radius:5px;
+}
+

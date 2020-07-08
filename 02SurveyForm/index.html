@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="main">
+        <div></div>
+        <div id="grid-wrapper">
+            <h1 id="title">Customer Feedback Form</h1>
+            <p id="description">Here at GregyCo we value your opinion on your interactions with our staff. Please take a
+                few moments to answer a few quick questions so that we may server you better.</p>
+
+
+            <form id="survey-form">
+
+                <div>
+                    <label id="name-label" for="name">Name</label>
+                    <input id="name" type="text" placeholder="Last, First" required>
+                </div>
+                <div>
+                    <label id="email-label" for="email">Email</label>
+                    <input id="email" type="email" placeholder="valid email" required>
+                </div>
+                <div>
+                    <label id="number-label" for="number">Score</label>
+                    <input type="number" name="Score" id="number" min="0" max="10" placeholder="0-10" required>
+                </div>
+                <div>
+                    <label for="dropdown" id="dropdown-label">Would you use us again?</label>
+                    <select name="dropdown" id="dropdown">
+                        <option value="Yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="input-group">
+
+                    <label>What was your initial contact for?</label><br>
+
+                    <input type="radio" name="reason" id="tech-support" value="Tech Support">
+                    <label for="radio">Tech Support</label>
+
+                    <input type="radio" name="reason" id="web-dev" value="Web Development">
+                    <label for="radio">Web Development</label>
+
+                    <input type="radio" name="reason" id="other" value="Other">
+                    <label for="radio">Other</label>
+                </div>
+                <div>
+                    <label for="comments" id="comments-label">Comments</label>
+                    <textarea name="comments" id="comments" cols="40" rows="3"></textarea>
+                </div>
+
+                <div>
+                    <label>Please check if you would like to recive occasional updates from us:</label></br>
+                    <label for="tips-n-tricks">Tips and Tricks</label>
+                    <input type="checkbox" value="Tips and Tricks" name="Tips & Tricks" id="tips-n-tricks">
+
+                    <label for="special-deals">Special Deals</label>
+                    <input type="checkbox" value="Special Deals" name="Special Deals" id="special-deals"></br></br>
+                    <button id="submit">Submit</button>
+            </form>
+
+
+        </div>
+        <div></div>
+
+    </div>
+</body>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
