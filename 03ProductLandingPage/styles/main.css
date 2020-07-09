@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins,sans-serif;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100px (1fr)[5];
+      grid-template-rows: 100px repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas: "header header header header" "main-top main-top main-top sidebar" "main-top main-top main-top sidebar" "main-bottom main-bottom main-bottom sidebar" "main-bottom main-bottom main-bottom sidebar" "main-bottom main-bottom main-bottom sidebar";
+  margin: 0px;
+}
+
+header {
+  background-color: #00153B;
+  color: white;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: header;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.branding {
+  font-size: 4em;
+  justify-self: flex-start;
+}
+
+nav {
+  font-size: 2em;
+  margin-left: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0px 15px;
+}
+
+nav a:hover {
+  color: #e77c55;
+}
+/*# sourceMappingURL=main.css.map */
