@@ -8,12 +8,13 @@ body, html {
 main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 100px (1fr)[5];
-      grid-template-rows: 100px repeat(5, 1fr);
+  -ms-grid-rows: 80px (1fr)[4];
+      grid-template-rows: 80px repeat(4, 1fr);
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-      grid-template-areas: "header header header header" "main-top main-top main-top sidebar" "main-top main-top main-top sidebar" "main-bottom main-bottom main-bottom sidebar" "main-bottom main-bottom main-bottom sidebar" "main-bottom main-bottom main-bottom sidebar";
+      grid-template-areas: "header header header header" "main-top main-top main-top sidebar" "main-bottom main-bottom main-bottom sidebar" "main-bottom main-bottom main-bottom sidebar" "main-bottom main-bottom main-bottom sidebar";
   margin: 0px;
+  height: 100%;
 }
 
 header {
@@ -26,6 +27,11 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  top: 0;
+}
+
+header img {
+  max-height: 80px;
 }
 
 .branding {
@@ -34,20 +40,92 @@ header {
 }
 
 nav {
-  font-size: 2em;
+  font-size: 1.8em;
   margin-left: auto;
+  margin-right: 30px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-nav a {
+nav .nav-link {
   color: white;
   text-decoration: none;
   padding: 0px 15px;
 }
 
-nav a:hover {
+nav .nav-link:hover {
   color: #e77c55;
+}
+
+#main-top {
+  color: #e77c55;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: main-top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px auto 0px auto;
+}
+
+#quote {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 3vw;
+}
+
+#quoteby {
+  display: block;
+  text-align: right;
+  font-style: italic;
+  font-size: .6em;
+}
+
+#main-bottom {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: main-bottom;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  margin: 0 auto;
+}
+
+#main-bottom div {
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#main-bottom img {
+  width: 25vw;
+  height: 25vw;
+}
+
+#about {
+  width: 50vw;
+}
+
+#sidebar {
+  background-color: #e77c55;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 4;
+  grid-area: sidebar;
+  height: 100vh;
+}
+
+#vidwrapper {
+  width: 400px;
+  margin: 20px auto;
 }
 /*# sourceMappingURL=main.css.map */

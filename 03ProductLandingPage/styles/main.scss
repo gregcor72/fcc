@@ -11,19 +11,19 @@ body,html {
     padding:0;
     font-family:Poppins,sans-serif;
 }
-
+ 
 main {
     display:grid;
-    grid-template-rows:100px repeat(5, 1fr);
+    grid-template-rows:80px repeat(4, 1fr);
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
     "header header header header"
-    "main-top main-top main-top sidebar"
     "main-top main-top main-top sidebar"
     "main-bottom main-bottom main-bottom sidebar"
     "main-bottom main-bottom main-bottom sidebar"
     "main-bottom main-bottom main-bottom sidebar";
     margin:0px;
+    height:100%;
     
 }
 
@@ -32,6 +32,11 @@ header {
     color:white;
     grid-area:header;
     display:flex;
+    top:0;
+
+    img {
+        max-height:80px;
+    }
 }
 
 .branding {
@@ -40,17 +45,72 @@ header {
 }
 
 nav {
-    font-size:2em;
+    font-size:1.8em;
     margin-left:auto;
+    margin-right:30px;
     align-self:center;
 
-    a {
+  .nav-link {
         color:white;
         text-decoration:none;
         padding:0px 15px;
     }
 
-    a:hover {
+    .nav-link:hover {
         color:$orange;
     }
 }
+
+#main-top {
+ 
+    color:$orange;
+    grid-area:main-top;
+    display:flex;
+    flex-direction:column;
+   margin:10px auto 0px auto;
+}
+        #quote {
+            align-self:center;
+            font-size:3vw;
+        }
+
+        #quoteby {
+            display:block;
+            text-align:right;
+            font-style:italic;
+            font-size:.6em;
+        }
+
+#main-bottom {
+   
+    grid-area:main-bottom;
+    display:grid;
+    grid-template-rows:auto auto;
+    margin:0 auto;
+
+    div {
+        margin:0 auto;
+        padding:10px;
+    }
+
+    img {
+        width:25vw;
+        height:25vw;
+    }
+    
+}
+
+#about {
+    width:50vw;
+}
+
+#sidebar {
+    background-color:#e77c55;
+    grid-area:sidebar;
+    height:100vh;
+}
+
+#vidwrapper {
+    width:400px;
+    margin:20px auto;
+   }
