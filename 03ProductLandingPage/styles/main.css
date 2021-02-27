@@ -1,17 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
-  font-family: Poppins,sans-serif;
+  font-family: Poppins, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 #header {
+  padding-top: 22px;
   width: 100%;
-  background-color: #00153B;
+  background-color: #00153b;
 }
 
 #nav-bar {
-  background-color: #00153B;
+  position: fixed;
+  top: 0;
+  width: 1280px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #00153b;
   text-align: right;
   padding-right: 20px;
 }
@@ -41,12 +55,44 @@ main {
   padding: 0px 20px;
 }
 
+#videodiv {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #videodiv {
+    display: none;
+  }
+}
+
+input {
+  padding: 5px;
+  font-size: 1.1em;
+}
+
+.submitbtn {
+  padding: 5px;
+}
+
+label {
+  display: block;
+}
+
 #footer {
-  background-color: #00153B;
+  background-color: #00153b;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */

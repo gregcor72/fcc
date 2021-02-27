@@ -10,15 +10,18 @@
 
 <body>
 
-    <header id="header">
-
-        <div class="branding"><img src="/03ProductLandingPage/img/GregyCo.png" id="header-img"></div>
-
-        <nav id="nav-bar">
+ <div class="wrapper">
+  
+        <header id="header">
+               <nav id="nav-bar">
             <a href="#about" class="nav-link">About</a>
             <a href="#support" class="nav-link">Support</a>
-            <a href="#newsletter"class="nav-link">Sign Up</a>
+            <a href="#form"class="nav-link">Sign Up</a>
         </nav>
+   
+        <div class="branding"><img src="/03ProductLandingPage/img/GregyCo.png" id="header-img"></div>
+
+     
     </header>
     <main>
 
@@ -48,20 +51,39 @@
             </p>
         </div>
 
+         <div id="videodiv">
+             <h2>How to Hang that sucker!</h2>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Ulw-EjskUko" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      
+  <div id="footer">
+     
+    
+        <!-- <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label for="email">Put your email here, NOW!</label></br>
+            <input type="email"id="email" placeholder="Where ya want ya spam?"></br>
+            <input type="submit" class="submitbtn" value="Submit" id="submit">
+            </form> -->
+
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <label for="email">Give us your info!</label>
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <input id="submit" type="submit" value="Get Spam" class="submitbtn" />
+    </form>
+    
+  </div>
+
         </div>
     </main>
 
-  <div id="footer">
-      <div id="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ulw-EjskUko" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div id="right">
-        <form id="form">
-            <label for="email">email</label></br>
-            <input type="email"  id="email">
-        </form>
-      </div>
-  </div>
+ </div>
 
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

@@ -1,53 +1,93 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
 
-$green:#209787;
-$darkblue:#00153B;
-$orange:#e77c55;
-$grey:#d0d0d0;
-$lightblue:#d9f7fa;
+$green: #209787;
+$darkblue: #00153b;
+$orange: #e77c55;
+$grey: #d0d0d0;
+$lightblue: #d9f7fa;
 
-body,html {
-    margin:0;
-    padding:0;
-    font-family:Poppins,sans-serif;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
 }
+
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 #header {
-    width:100%;
-    background-color:$darkblue;
+  padding-top: 22px;
+  width: 100%;
+  background-color: $darkblue;
 }
 
 #nav-bar {
-    background-color:$darkblue;
-    text-align:right;
-    padding-right:20px;
-    a {
-        color:white;
-        font-weight:bold;
-        font-size:1.4em;
-        text-decoration:none;
-        padding:0px 20px;
-    }
-    a:hover {
-        color:$orange;
-    }
+  position: fixed;
+  top: 0;
+  width: 1280px;
+  box-sizing: border-box;
+  background-color: $darkblue;
+  text-align: right;
+  padding-right: 20px;
+  a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.4em;
+    text-decoration: none;
+    padding: 0px 20px;
+  }
+  a:hover {
+    color: $orange;
+  }
 }
 
 #top {
-    padding-top:30px;
-    width:1000px;
-    margin:0 auto;
-    font-size:2.5em;
-    font-weight:bold;
-    color:$orange;
+  padding-top: 30px;
+  width: 1000px;
+  margin: 0 auto;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: $orange;
 }
 
 main {
-    padding: 0px 20px;
+  padding: 0px 20px;
+}
+
+#videodiv {
+  display: grid;
+  justify-items: center;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #videodiv {
+    display: none;
+  }
+}
+
+input {
+  padding: 5px;
+  font-size: 1.1em;
+}
+
+.submitbtn {
+  padding: 5px;
+}
+
+label {
+  display: block;
 }
 
 #footer {
-    background-color:$darkblue;
-    color:white;
-    display:flex;
-    padding:20px;
+  background-color: $darkblue;
+  color: white;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
